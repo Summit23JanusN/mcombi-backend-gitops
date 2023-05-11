@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: mcombi
+  cluster: .apps.summit23bis.17gd.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23JanusN/mcombi-backend
+  org: Summit23JanusN
+  name: mcombi-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: mcombi/poi-backend-app
+  tag: latest
